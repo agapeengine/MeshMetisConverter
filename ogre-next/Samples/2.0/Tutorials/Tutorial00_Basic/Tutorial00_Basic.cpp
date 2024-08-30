@@ -19,9 +19,6 @@
 #include "OgreHlmsManager.h"
 #include "OgreHlmsPbs.h"
 #include "OgreHlmsUnlit.h"
-#include"OgreMeshManager.h"
-
-
 
 #include "Compositor/OgreCompositorManager2.h"
 
@@ -189,7 +186,6 @@ int main( int argc, const char *argv[] )
     const size_t numThreads = 1u;
     SceneManager *sceneManager = root->createSceneManager( ST_GENERIC, numThreads, "ExampleSMInstance" );
 
-   
     // Create & setup camera
     Camera *camera = sceneManager->createCamera( "Main Camera" );
 
@@ -207,29 +203,6 @@ int main( int argc, const char *argv[] )
     const ColourValue backgroundColour( 0.2f, 0.4f, 0.6f );
     compositorManager->createBasicWorkspaceDef( workspaceName, backgroundColour, IdString() );
     compositorManager->addWorkspace( sceneManager, window->getTexture(), camera, workspaceName, true );
-
-
-    
-    Ogre::v1::Entity* ent = sceneManager->createEntity("MyEntity","Sinbad.mesh",SCENE_DYNAMIC);
-       
-
-    Ogre::SceneNode *node = sceneManager->createSceneNode(SCENE_DYNAMIC);
-
-    node->setPosition( 10, 10, 0 );
-
-    sceneManager->getRootSceneNode()->addChild(node);
-
-
-    node->setOrientation(1,0,0,0);
-
-    Ogre::SceneNode*node_2=node->createChildSceneNode(Ogre::SCENE_DYNAMIC);
-
-
-    Ogre::Quaternion quat_1(0.045,0.0045,0.45,0.321);
-
-    node_2->_setDerivedOrientation(quat_1);
-    
-    
 
     MyWindowEventListener myWindowEventListener;
     WindowEventUtilities::addWindowEventListener( window, &myWindowEventListener );

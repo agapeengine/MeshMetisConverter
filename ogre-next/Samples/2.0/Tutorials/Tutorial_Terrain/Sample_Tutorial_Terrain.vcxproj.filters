@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Tutorials\Tutorial_Terrain\src\Terra\Hlms\OgreHlmsJsonTerra.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Tutorials\Tutorial_Terrain\src\Terra\Hlms\OgreHlmsTerra.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Tutorials\Tutorial_Terrain\src\Terra\Hlms\OgreHlmsTerraDatablock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Tutorials\Tutorial_Terrain\src\Terra\Hlms\PbsListener\OgreHlmsPbsTerraShadows.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Tutorials\Tutorial_Terrain\src\Terra\Terra.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Tutorials\Tutorial_Terrain\src\Terra\TerraShadowMapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Tutorials\Tutorial_Terrain\src\Terra\TerraWorkspaceListener.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Tutorials\Tutorial_Terrain\src\Terra\TerrainCell.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Tutorials\Tutorial_Terrain\src\Tutorial_Terrain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Tutorials\Tutorial_Terrain\src\Tutorial_TerrainGameState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Tutorials\Tutorial_Terrain\include\Terra\Hlms\OgreHlmsJsonTerra.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Tutorials\Tutorial_Terrain\include\Terra\Hlms\OgreHlmsTerra.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Tutorials\Tutorial_Terrain\include\Terra\Hlms\OgreHlmsTerraDatablock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Tutorials\Tutorial_Terrain\include\Terra\Hlms\OgreHlmsTerraPrerequisites.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Tutorials\Tutorial_Terrain\include\Terra\Hlms\PbsListener\OgreHlmsPbsTerraShadows.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Tutorials\Tutorial_Terrain\include\Terra\Terra.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Tutorials\Tutorial_Terrain\include\Terra\TerraShadowMapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Tutorials\Tutorial_Terrain\include\Terra\TerraWorkspaceListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Tutorials\Tutorial_Terrain\include\Terra\TerrainCell.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Tutorials\Tutorial_Terrain\include\Tutorial_Terrain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Tutorials\Tutorial_Terrain\include\Tutorial_TerrainGameState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{79B5AC2B-212B-33A8-A004-2FC589A3958B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{E747CA16-F163-3533-A414-32D5880B66AA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

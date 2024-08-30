@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C94679BC-545B-30C8-94DF-88932830675E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>OgreSamplesCommon</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Windows\System32\Ogre\ogre-next\build\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">OgreSamplesCommon.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">OgreSamplesCommon_d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Windows\System32\Ogre\ogre-next\build\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OgreSamplesCommon.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">OgreSamplesCommon</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Windows\System32\Ogre\ogre-next\build\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">OgreSamplesCommon.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">OgreSamplesCommon</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Windows\System32\Ogre\ogre-next\build\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">OgreSamplesCommon.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">OgreSamplesCommon</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Windows\System32\Ogre\ogre-next\OgreMain\include;C:\Windows\System32\Ogre\ogre-next\build\include;C:\Windows\System32\Ogre\ogre-next-deps\build\ogredeps\include;C:\Windows\System32\Ogre\ogre-next;C:\Windows\System32\Ogre\ogre-next\OgreMain\include\Threading;C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include;C:\Windows\System32\Ogre\ogre-next\Components\Overlay\include;C:\Windows\System32\Ogre\ogre-next-deps\build\ogredeps\include\SDL2;C:\Windows\System32\Ogre\ogre-next\Components\Hlms\Pbs\include;C:\Windows\System32\Ogre\ogre-next\Components\Hlms\Unlit\include;C:\Windows\System32\Ogre\ogre-next\Components\Hlms\Common\include;C:\Windows\System32\Ogre\ogre-next\Components\Atmosphere\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus /Zm256 /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4786;4503;4251;4275;4290;4661;4996;4127;4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;USE_JSON_UNIT_TESTING;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;USE_JSON_UNIT_TESTING;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Windows\System32\Ogre\ogre-next\OgreMain\include;C:\Windows\System32\Ogre\ogre-next\build\include;C:\Windows\System32\Ogre\ogre-next-deps\build\ogredeps\include;C:\Windows\System32\Ogre\ogre-next;C:\Windows\System32\Ogre\ogre-next\OgreMain\include\Threading;C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include;C:\Windows\System32\Ogre\ogre-next\Components\Overlay\include;C:\Windows\System32\Ogre\ogre-next-deps\build\ogredeps\include\SDL2;C:\Windows\System32\Ogre\ogre-next\Components\Hlms\Pbs\include;C:\Windows\System32\Ogre\ogre-next\Components\Hlms\Unlit\include;C:\Windows\System32\Ogre\ogre-next\Components\Hlms\Common\include;C:\Windows\System32\Ogre\ogre-next\Components\Atmosphere\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Windows\System32\Ogre\ogre-next\OgreMain\include;C:\Windows\System32\Ogre\ogre-next\build\include;C:\Windows\System32\Ogre\ogre-next-deps\build\ogredeps\include;C:\Windows\System32\Ogre\ogre-next;C:\Windows\System32\Ogre\ogre-next\OgreMain\include\Threading;C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include;C:\Windows\System32\Ogre\ogre-next\Components\Overlay\include;C:\Windows\System32\Ogre\ogre-next-deps\build\ogredeps\include\SDL2;C:\Windows\System32\Ogre\ogre-next\Components\Hlms\Pbs\include;C:\Windows\System32\Ogre\ogre-next\Components\Hlms\Unlit\include;C:\Windows\System32\Ogre\ogre-next\Components\Hlms\Common\include;C:\Windows\System32\Ogre\ogre-next\Components\Atmosphere\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Windows\System32\Ogre\ogre-next\OgreMain\include;C:\Windows\System32\Ogre\ogre-next\build\include;C:\Windows\System32\Ogre\ogre-next-deps\build\ogredeps\include;C:\Windows\System32\Ogre\ogre-next;C:\Windows\System32\Ogre\ogre-next\OgreMain\include\Threading;C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include;C:\Windows\System32\Ogre\ogre-next\Components\Overlay\include;C:\Windows\System32\Ogre\ogre-next-deps\build\ogredeps\include\SDL2;C:\Windows\System32\Ogre\ogre-next\Components\Hlms\Pbs\include;C:\Windows\System32\Ogre\ogre-next\Components\Hlms\Unlit\include;C:\Windows\System32\Ogre\ogre-next\Components\Hlms\Common\include;C:\Windows\System32\Ogre\ogre-next\Components\Atmosphere\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus /Zm256</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4786;4503;4251;4275;4290;4661;4996;4127;4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USE_JSON_UNIT_TESTING;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USE_JSON_UNIT_TESTING;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Windows\System32\Ogre\ogre-next\OgreMain\include;C:\Windows\System32\Ogre\ogre-next\build\include;C:\Windows\System32\Ogre\ogre-next-deps\build\ogredeps\include;C:\Windows\System32\Ogre\ogre-next;C:\Windows\System32\Ogre\ogre-next\OgreMain\include\Threading;C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include;C:\Windows\System32\Ogre\ogre-next\Components\Overlay\include;C:\Windows\System32\Ogre\ogre-next-deps\build\ogredeps\include\SDL2;C:\Windows\System32\Ogre\ogre-next\Components\Hlms\Pbs\include;C:\Windows\System32\Ogre\ogre-next\Components\Hlms\Unlit\include;C:\Windows\System32\Ogre\ogre-next\Components\Hlms\Common\include;C:\Windows\System32\Ogre\ogre-next\Components\Atmosphere\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Windows\System32\Ogre\ogre-next\OgreMain\include;C:\Windows\System32\Ogre\ogre-next\build\include;C:\Windows\System32\Ogre\ogre-next-deps\build\ogredeps\include;C:\Windows\System32\Ogre\ogre-next;C:\Windows\System32\Ogre\ogre-next\OgreMain\include\Threading;C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include;C:\Windows\System32\Ogre\ogre-next\Components\Overlay\include;C:\Windows\System32\Ogre\ogre-next-deps\build\ogredeps\include\SDL2;C:\Windows\System32\Ogre\ogre-next\Components\Hlms\Pbs\include;C:\Windows\System32\Ogre\ogre-next\Components\Hlms\Unlit\include;C:\Windows\System32\Ogre\ogre-next\Components\Hlms\Common\include;C:\Windows\System32\Ogre\ogre-next\Components\Atmosphere\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Windows\System32\Ogre\ogre-next\OgreMain\include;C:\Windows\System32\Ogre\ogre-next\build\include;C:\Windows\System32\Ogre\ogre-next-deps\build\ogredeps\include;C:\Windows\System32\Ogre\ogre-next;C:\Windows\System32\Ogre\ogre-next\OgreMain\include\Threading;C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include;C:\Windows\System32\Ogre\ogre-next\Components\Overlay\include;C:\Windows\System32\Ogre\ogre-next-deps\build\ogredeps\include\SDL2;C:\Windows\System32\Ogre\ogre-next\Components\Hlms\Pbs\include;C:\Windows\System32\Ogre\ogre-next\Components\Hlms\Unlit\include;C:\Windows\System32\Ogre\ogre-next\Components\Hlms\Common\include;C:\Windows\System32\Ogre\ogre-next\Components\Atmosphere\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus /Zm256</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4786;4503;4251;4275;4290;4661;4996;4127;4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USE_JSON_UNIT_TESTING;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USE_JSON_UNIT_TESTING;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Windows\System32\Ogre\ogre-next\OgreMain\include;C:\Windows\System32\Ogre\ogre-next\build\include;C:\Windows\System32\Ogre\ogre-next-deps\build\ogredeps\include;C:\Windows\System32\Ogre\ogre-next;C:\Windows\System32\Ogre\ogre-next\OgreMain\include\Threading;C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include;C:\Windows\System32\Ogre\ogre-next\Components\Overlay\include;C:\Windows\System32\Ogre\ogre-next-deps\build\ogredeps\include\SDL2;C:\Windows\System32\Ogre\ogre-next\Components\Hlms\Pbs\include;C:\Windows\System32\Ogre\ogre-next\Components\Hlms\Unlit\include;C:\Windows\System32\Ogre\ogre-next\Components\Hlms\Common\include;C:\Windows\System32\Ogre\ogre-next\Components\Atmosphere\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Windows\System32\Ogre\ogre-next\OgreMain\include;C:\Windows\System32\Ogre\ogre-next\build\include;C:\Windows\System32\Ogre\ogre-next-deps\build\ogredeps\include;C:\Windows\System32\Ogre\ogre-next;C:\Windows\System32\Ogre\ogre-next\OgreMain\include\Threading;C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include;C:\Windows\System32\Ogre\ogre-next\Components\Overlay\include;C:\Windows\System32\Ogre\ogre-next-deps\build\ogredeps\include\SDL2;C:\Windows\System32\Ogre\ogre-next\Components\Hlms\Pbs\include;C:\Windows\System32\Ogre\ogre-next\Components\Hlms\Unlit\include;C:\Windows\System32\Ogre\ogre-next\Components\Hlms\Common\include;C:\Windows\System32\Ogre\ogre-next\Components\Atmosphere\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Windows\System32\Ogre\ogre-next\OgreMain\include;C:\Windows\System32\Ogre\ogre-next\build\include;C:\Windows\System32\Ogre\ogre-next-deps\build\ogredeps\include;C:\Windows\System32\Ogre\ogre-next;C:\Windows\System32\Ogre\ogre-next\OgreMain\include\Threading;C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include;C:\Windows\System32\Ogre\ogre-next\Components\Overlay\include;C:\Windows\System32\Ogre\ogre-next-deps\build\ogredeps\include\SDL2;C:\Windows\System32\Ogre\ogre-next\Components\Hlms\Pbs\include;C:\Windows\System32\Ogre\ogre-next\Components\Hlms\Unlit\include;C:\Windows\System32\Ogre\ogre-next\Components\Hlms\Common\include;C:\Windows\System32\Ogre\ogre-next\Components\Atmosphere\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:__cplusplus /Zm256 /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4786;4503;4251;4275;4290;4661;4996;4127;4100</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USE_JSON_UNIT_TESTING;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USE_JSON_UNIT_TESTING;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Windows\System32\Ogre\ogre-next\OgreMain\include;C:\Windows\System32\Ogre\ogre-next\build\include;C:\Windows\System32\Ogre\ogre-next-deps\build\ogredeps\include;C:\Windows\System32\Ogre\ogre-next;C:\Windows\System32\Ogre\ogre-next\OgreMain\include\Threading;C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include;C:\Windows\System32\Ogre\ogre-next\Components\Overlay\include;C:\Windows\System32\Ogre\ogre-next-deps\build\ogredeps\include\SDL2;C:\Windows\System32\Ogre\ogre-next\Components\Hlms\Pbs\include;C:\Windows\System32\Ogre\ogre-next\Components\Hlms\Unlit\include;C:\Windows\System32\Ogre\ogre-next\Components\Hlms\Common\include;C:\Windows\System32\Ogre\ogre-next\Components\Atmosphere\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Windows\System32\Ogre\ogre-next\OgreMain\include;C:\Windows\System32\Ogre\ogre-next\build\include;C:\Windows\System32\Ogre\ogre-next-deps\build\ogredeps\include;C:\Windows\System32\Ogre\ogre-next;C:\Windows\System32\Ogre\ogre-next\OgreMain\include\Threading;C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include;C:\Windows\System32\Ogre\ogre-next\Components\Overlay\include;C:\Windows\System32\Ogre\ogre-next-deps\build\ogredeps\include\SDL2;C:\Windows\System32\Ogre\ogre-next\Components\Hlms\Pbs\include;C:\Windows\System32\Ogre\ogre-next\Components\Hlms\Unlit\include;C:\Windows\System32\Ogre\ogre-next\Components\Hlms\Common\include;C:\Windows\System32\Ogre\ogre-next\Components\Atmosphere\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\BaseSystem.cpp" />
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\CameraController.cpp" />
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\GameEntityManager.cpp" />
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\GraphicsSystem.cpp" />
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\LogicSystem.cpp" />
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\SdlInputHandler.cpp" />
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\System\Android\AndroidSystems.cpp" />
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\System\MainEntryPoints.cpp" />
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\System\StaticPluginLoader.cpp" />
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\Threading\MessageQueueSystem.cpp" />
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\TutorialGameState.cpp" />
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\Utils\HdrUtils.cpp" />
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\Utils\MeshUtils.cpp" />
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\Utils\MiscUtils.cpp" />
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\Utils\ScreenSpaceReflections.cpp" />
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\Utils\SmaaUtils.cpp" />
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\Utils\TestUtils.cpp" />
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\System\Desktop\MainLoopMultiThreaded.cpp" />
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\System\Desktop\MainLoopSingleThreaded.cpp" />
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\System\Desktop\UnitTesting.cpp" />
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\BaseSystem.h" />
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\CameraController.h" />
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\GameEntity.h" />
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\GameEntityManager.h" />
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\GameState.h" />
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\GraphicsSystem.h" />
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\InputListeners.h" />
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\LogicSystem.h" />
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\MainEntryPointHelper.h" />
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\SdlEmulationLayer.h" />
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\SdlInputHandler.h" />
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\System\Android\AndroidSystems.h" />
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\System\Desktop\UnitTesting.h" />
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\System\MainEntryPoints.h" />
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\System\OSX\OSXUtils.h" />
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\System\StaticPluginLoader.h" />
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\System\iOS\AppDelegate.h" />
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\System\iOS\GameViewController.h" />
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\System\iOS\iOSUtils.h" />
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\Threading\MessageQueueSystem.h" />
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\Threading\MqMessages.h" />
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\Threading\YieldTimer.h" />
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\TutorialGameState.h" />
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\Utils\HdrUtils.h" />
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\Utils\MeshUtils.h" />
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\Utils\MiscUtils.h" />
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\Utils\ScreenSpaceReflections.h" />
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\Utils\SmaaUtils.h" />
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\Utils\TestUtils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Windows\System32\Ogre\ogre-next\build\Components\Atmosphere\OgreAtmosphere.vcxproj">
+      <Project>{B79D554A-75D4-3064-9855-4BAB91B2816D}</Project>
+      <Name>OgreAtmosphere</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Windows\System32\Ogre\ogre-next\build\Components\Hlms\Pbs\OgreHlmsPbs.vcxproj">
+      <Project>{45C694C4-6431-3B4F-B2AE-3C631AF4AD26}</Project>
+      <Name>OgreHlmsPbs</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Windows\System32\Ogre\ogre-next\build\Components\Hlms\Unlit\OgreHlmsUnlit.vcxproj">
+      <Project>{61464004-AB37-39E7-B9DF-4AF91FF70EED}</Project>
+      <Name>OgreHlmsUnlit</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Windows\System32\Ogre\ogre-next\build\OgreMain\OgreMain.vcxproj">
+      <Project>{FB73DCDB-18DA-31A1-B5F8-B368FA426CA6}</Project>
+      <Name>OgreMain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

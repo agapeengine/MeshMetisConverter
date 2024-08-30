@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\Windows\System32\Ogre\ogre-next\build\bin\Release\OgreMain.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Windows\System32\Ogre\ogre-next\build\bin\Release\OgreAtmosphere.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Windows\System32\Ogre\ogre-next\build\bin\Release\OgreHlmsPbs.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Windows\System32\Ogre\ogre-next\build\bin\Release\OgreHlmsUnlit.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Windows\System32\Ogre\ogre-next\build\bin\Release\OgreOverlay.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Windows\System32\Ogre\ogre-next\build\bin\Release\Sample_AnimationTagPoint.exe</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

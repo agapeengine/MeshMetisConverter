@@ -163,7 +163,6 @@ namespace Ogre
             replaceVersionMacros();
 
         // Mask out vulkan_layout() macros
-        size_t unusedVal = 0;
         const String preamble =
             "#define vulkan_layout(x)\n"
             "#define vulkan( x )\n"
@@ -180,7 +179,7 @@ namespace Ogre
             "#define vkSampler2DArray( a, b ) a\n"
             "#define vkSampler3D( a, b ) a\n"
             "#define vkSamplerCube( a, b ) a\n";
-        cpp.Parse( preamble.c_str(), preamble.size(), unusedVal );
+        cpp.ParsePreamble( preamble.c_str(), preamble.size() );
 
         // Pass all user-defined macros to preprocessor
         if( !mPreprocessorDefines.empty() )
@@ -240,6 +239,7 @@ namespace Ogre
         const char *src = mSource.c_str();
         size_t src_len = mSource.size();
         char *out = cpp.Parse( src, src_len, out_size );
+
         if( !out || !out_size )
         {
             mCompileError = true;
@@ -632,17 +632,33 @@ namespace Ogre
         {
             return OT_LINE_LIST;
         }
+        else if( val == "line_list_adj" )
+        {
+            return OT_LINE_LIST_ADJ;
+        }
         else if( val == "line_strip" )
         {
             return OT_LINE_STRIP;
+        }
+        else if( val == "line_strip_adj" )
+        {
+            return OT_LINE_STRIP_ADJ;
         }
         else if( val == "triangle_strip" )
         {
             return OT_TRIANGLE_STRIP;
         }
+        else if( val == "triangle_strip_adj" )
+        {
+            return OT_TRIANGLE_STRIP_ADJ;
+        }
         else if( val == "triangle_fan" )
         {
             return OT_TRIANGLE_FAN;
+        }
+        else if( val == "triangle_list_adj" )
+        {
+            return OT_TRIANGLE_LIST_ADJ;
         }
         else
         {
@@ -661,14 +677,26 @@ namespace Ogre
         case OT_LINE_LIST:
             return "line_list";
             break;
+        case OT_LINE_LIST_ADJ:
+            return "line_list_adj";
+            break;
         case OT_LINE_STRIP:
             return "line_strip";
+            break;
+        case OT_LINE_STRIP_ADJ:
+            return "line_strip_adj";
             break;
         case OT_TRIANGLE_STRIP:
             return "triangle_strip";
             break;
+        case OT_TRIANGLE_STRIP_ADJ:
+            return "triangle_strip_adj";
+            break;
         case OT_TRIANGLE_FAN:
             return "triangle_fan";
+            break;
+        case OT_TRIANGLE_LIST_ADJ:
+            return "triangle_list_adj";
             break;
         case OT_TRIANGLE_LIST:
         default:

@@ -1116,6 +1116,12 @@ namespace Ogre
         case OT_TRIANGLE_FAN:
             mMetrics.mFaceCount += ( primCount - 2u );
             break;
+        case OT_TRIANGLE_LIST_ADJ:
+            mMetrics.mFaceCount += ( primCount / 6 );
+            break;
+        case OT_TRIANGLE_STRIP_ADJ:
+            mMetrics.mFaceCount += ( primCount / 2 - 2 );
+            break;
         default:
             break;
         }
@@ -1248,7 +1254,7 @@ namespace Ogre
     //-----------------------------------------------------------------------
     size_t RenderSystem::getNumPriorityConfigOptions() const { return 0u; }
     //-----------------------------------------------------------------------
-    bool RenderSystem::supportsMultithreadedShaderCompliation() const { return false; }
+    bool RenderSystem::supportsMultithreadedShaderCompilation() const { return false; }
     //-----------------------------------------------------------------------
     void RenderSystem::destroyHardwareOcclusionQuery( HardwareOcclusionQuery *hq )
     {

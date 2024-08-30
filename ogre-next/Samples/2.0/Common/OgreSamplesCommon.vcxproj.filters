@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\BaseSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\CameraController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\GameEntityManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\GraphicsSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\LogicSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\SdlInputHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\System\Android\AndroidSystems.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\System\MainEntryPoints.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\System\StaticPluginLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\Threading\MessageQueueSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\TutorialGameState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\Utils\HdrUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\Utils\MeshUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\Utils\MiscUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\Utils\ScreenSpaceReflections.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\Utils\SmaaUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\Utils\TestUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\System\Desktop\MainLoopMultiThreaded.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\System\Desktop\MainLoopSingleThreaded.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\src\System\Desktop\UnitTesting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\BaseSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\CameraController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\GameEntity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\GameEntityManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\GameState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\GraphicsSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\InputListeners.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\LogicSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\MainEntryPointHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\SdlEmulationLayer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\SdlInputHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\System\Android\AndroidSystems.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\System\Desktop\UnitTesting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\System\MainEntryPoints.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\System\OSX\OSXUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\System\StaticPluginLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\System\iOS\AppDelegate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\System\iOS\GameViewController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\System\iOS\iOSUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\Threading\MessageQueueSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\Threading\MqMessages.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\Threading\YieldTimer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\TutorialGameState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\Utils\HdrUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\Utils\MeshUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\Utils\MiscUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\Utils\ScreenSpaceReflections.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\Utils\SmaaUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Windows\System32\Ogre\ogre-next\Samples\2.0\Common\include\Utils\TestUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{79B5AC2B-212B-33A8-A004-2FC589A3958B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{E747CA16-F163-3533-A414-32D5880B66AA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

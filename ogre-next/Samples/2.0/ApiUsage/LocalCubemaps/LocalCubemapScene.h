@@ -1,17 +1,57 @@
+#include "OgrePrerequisites.h"
+#include "CameraController.h"
+
+#include "GraphicsSystem.h"
+
+#include "OgreItem.h"
+#include "OgreMesh.h"
+#include "OgreMesh2.h"
+#include "OgreMesh2Serializer.h"
+#include "OgreMeshManager.h"
+#include "OgreMeshManager2.h"
+#include "OgreSceneManager.h"
+
+#include "OgreCamera.h"
+
+
+
 void generateScene( Ogre::SceneManager *sceneManager )
 {
 	Ogre::Item *item = 0;
 	Ogre::SceneNode *sceneNode = 0;
+    Ogre::v1::MeshPtr v1mesh;
 
 	item = sceneManager->createItem( "Cube_d.mesh",
 									 Ogre::ResourceGroupManager::AUTODETECT_RESOURCE_GROUP_NAME,
 									 Ogre::SCENE_STATIC );
+
+	v1mesh = Ogre::v1::MeshManager::getSingleton().load(
+            "ninja.mesh",
+            Ogre::ResourceGroupManager::AUTODETECT_RESOURCE_GROUP_NAME,
+            Ogre::v1::HardwareBuffer::HBU_STATIC,
+            Ogre::v1::HardwareBuffer::HBU_STATIC);
+	   
+  
+	Ogre::MeshPtr v2mesh = Ogre::MeshManager::getSingleton().createByImportingV1(
+            "ninja.mesh",Ogre::ResourceGroupManager::AUTODETECT_RESOURCE_GROUP_NAME,
+                v1mesh.get(), true, true, true, true);
+    
+	Ogre::Item*item2;
+
+
+	item2=sceneManager->createItem(v2mesh,Ogre::SCENE_DYNAMIC);
+     
+
+
 	sceneNode = sceneManager->getRootSceneNode( Ogre::SCENE_STATIC )->
 			createChildSceneNode( Ogre::SCENE_STATIC );
 	sceneNode->setPosition( -0.5049998760223389, -0.49998417496681213, 5.005000591278076 );
 	sceneNode->setScale( 0.5, 10.1849946975708, 6.005115032196045 );
 	sceneNode->setOrientation( 0.5000000596046448, 0.4999999701976776, 0.5, 0.4999999701976776 );
 	sceneNode->attachObject( item );
+	sceneNode->attachObject(item2);
+
+	
 
 	item->setDatablock( "Cream" );
 

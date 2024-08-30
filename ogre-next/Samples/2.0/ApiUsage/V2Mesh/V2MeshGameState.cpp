@@ -26,7 +26,7 @@ namespace Demo
     {
         Ogre::SceneManager *sceneManager = mGraphicsSystem->getSceneManager();
 
-        Ogre::v1::MeshPtr v1Mesh;
+        Ogre::v1::MeshPtr v1Mesh[100];
         Ogre::MeshPtr v2Mesh;
 
         //---------------------------------------------------------------------------------------
@@ -36,9 +36,18 @@ namespace Demo
         // Load the v1 mesh. Notice the v1 namespace
         // Also notice the HBU_STATIC flag; since the HBU_WRITE_ONLY
         // bit would prohibit us from reading the data for importing.
-        v1Mesh = Ogre::v1::MeshManager::getSingleton().load(
-            "athene.mesh", Ogre::ResourceGroupManager::AUTODETECT_RESOURCE_GROUP_NAME,
-            Ogre::v1::HardwareBuffer::HBU_STATIC, Ogre::v1::HardwareBuffer::HBU_STATIC );
+
+        for (int i=0;i<100;i++)
+        {
+           
+            v1Mesh[i] = Ogre::v1::MeshManager::getSingleton().load(
+              "ninja.mesh",
+              Ogre::ResourceGroupManager::AUTODETECT_RESOURCE_GROUP_NAME,
+              Ogre::v1::HardwareBuffer::HBU_STATIC,
+              Ogre::v1::HardwareBuffer::HBU_STATIC);
+
+        }
+       
 
         bool halfPosition = true;
         bool halfUVs = true;
@@ -46,47 +55,94 @@ namespace Demo
 
         // Create a v2 mesh to import to, with a different name (arbitrary).
         // Import the v1 mesh to v2
-        v2Mesh = Ogre::MeshManager::getSingleton().createByImportingV1(
-            "athene.mesh Imported", Ogre::ResourceGroupManager::DEFAULT_RESOURCE_GROUP_NAME,
-            v1Mesh.get(), halfPosition, halfUVs, useQtangents );
 
+        
+           
+           v2Mesh = Ogre::MeshManager::getSingleton().createByImportingV1(
+              "Ninja_Imported",
+              Ogre::ResourceGroupManager::DEFAULT_RESOURCE_GROUP_NAME,
+              v1Mesh[0].get(), halfPosition, halfUVs, useQtangents);
+
+        
+        
+        
         // We don't need the v1 mesh. Free CPU memory, get it out of the GPU.
         // Leave it loaded if you want to use athene with v1 Entity.
-        v1Mesh->unload();
+        for (int i=0;i<100;i++)
+        {
+          v1Mesh[i]->unload();
+           
+        }
+        
 
         // Create an Item with the model we just imported.
         // Notice we use the name of the imported model. We could also use the overload
         // with the mesh pointer:
         //  item = sceneManager->createItem( v2Mesh, Ogre::SCENE_DYNAMIC );
-        Ogre::Item *item = sceneManager->createItem(
-            "athene.mesh Imported", Ogre::ResourceGroupManager::AUTODETECT_RESOURCE_GROUP_NAME,
-            Ogre::SCENE_DYNAMIC );
+        
+       Ogre::Item *item=sceneManager->createItem(v2Mesh,Ogre::SCENE_DYNAMIC);
+
+       Ogre::Item*item_2=sceneManager->createItem(v2Mesh,Ogre::SCENE_DYNAMIC);
+        /*
+            Ogre::Item*item = sceneManager->createItem(
+            "Ninja_Imported",
+            Ogre::ResourceGroupManager::AUTODETECT_RESOURCE_GROUP_NAME,
+            Ogre::SCENE_DYNAMIC);*/
+
+        
+      
         Ogre::SceneNode *sceneNode = sceneManager->getRootSceneNode( Ogre::SCENE_DYNAMIC )
                                          ->createChildSceneNode( Ogre::SCENE_DYNAMIC );
-        sceneNode->attachObject( item );
+
+
+        Ogre::SceneNode*scenode_2=sceneManager->getRootSceneNode(Ogre::SCENE_DYNAMIC)->createChildSceneNode(Ogre::SCENE_DYNAMIC);
+
+
+        sceneNode->attachObject(item);
         sceneNode->scale( 0.1f, 0.1f, 0.1f );
+
+        auto sceneNode_2=sceneManager->getRootSceneNode(Ogre::SCENE_DYNAMIC)->createChildSceneNode(Ogre::SCENE_DYNAMIC);
+        
+        sceneNode_2->attachObject(item_2);
+        sceneNode_2->setPosition(Ogre::Vector3{5,5,0.5});
+        sceneNode_2->scale(0.1f, 0.1f, 0.1f);
+        
         //---------------------------------------------------------------------------------------
         //
         //---------------------------------------------------------------------------------------
 
         //---------------------------------------------------------------------------------------
         // Import Barrel to save it to disk.
-        //---------------------------------------------------------------------------------------
-        v1Mesh = Ogre::v1::MeshManager::getSingleton().load(
-            "Barrel.mesh", Ogre::ResourceGroupManager::AUTODETECT_RESOURCE_GROUP_NAME,
-            Ogre::v1::HardwareBuffer::HBU_STATIC, Ogre::v1::HardwareBuffer::HBU_STATIC );
-        // Create a v2 mesh to import to, with a different name.
-        v2Mesh = Ogre::MeshManager::getSingleton().createByImportingV1(
-            "Barrel Imported", Ogre::ResourceGroupManager::DEFAULT_RESOURCE_GROUP_NAME, v1Mesh.get(),
-            halfPosition, halfUVs, useQtangents );
-        v2Mesh->load();
-        v1Mesh->unload();
+        
+        //for(int i=0;i<100;i++)
+        //{
+        ////---------------------------------------------------------------------------------------
+        //  v1Mesh[i] = Ogre::v1::MeshManager::getSingleton().load(
+        //    "Barrel.mesh", Ogre::ResourceGroupManager::AUTODETECT_RESOURCE_GROUP_NAME,
+        //    Ogre::v1::HardwareBuffer::HBU_STATIC, Ogre::v1::HardwareBuffer::HBU_STATIC );
+        //// Create a v2 mesh to import to, with a different name.
+        //  v2Mesh= Ogre::MeshManager::getSingleton().createByImportingV1(
+        //      "Barrel Imported",
+        //      Ogre::ResourceGroupManager::DEFAULT_RESOURCE_GROUP_NAME,
+        //      v1Mesh[i].get(),
+        //    halfPosition, halfUVs, useQtangents );
+
+        //  v2Mesh->load();
+        //  v1Mesh[i]->unload();
+
+        //  }
 
         // Save the v2 mesh to disk (optional)
         // The VaoManager argument is only required when importing a mesh.
         // You can get it from the RenderSystem
-        Ogre::MeshSerializer meshSerializer( 0 );
-        meshSerializer.exportMesh( v2Mesh.get(), "BarrelExportedModel_inV2.mesh" );
+        /*for (int i=0;i<100;i++)
+        {
+          Ogre::MeshSerializer meshSerializer(0);
+          meshSerializer.exportMesh(v2Mesh.get(),
+                                    "BarrelExportedModel_inV2.mesh");
+
+        }*/
+      
         //---------------------------------------------------------------------------------------
         //
         //---------------------------------------------------------------------------------------

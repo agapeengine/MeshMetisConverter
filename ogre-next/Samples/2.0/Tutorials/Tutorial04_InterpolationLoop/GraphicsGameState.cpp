@@ -37,31 +37,7 @@ namespace Demo
 
         mSceneNode->attachObject( item );
 
-       Ogre::SceneNode*node_child=sceneManager->createSceneNode(Ogre::SCENE_DYNAMIC);
-
-       Ogre::Item *item_child = sceneManager->createItem(
-           "Cube_d.mesh", Ogre::ResourceGroupManager::AUTODETECT_RESOURCE_GROUP_NAME,
-           Ogre::SCENE_DYNAMIC );
-      
-      mSceneNode->addChild(node_child);
-
-      node_child->attachObject(item_child);
-
-      mSceneNode->lookAt( Ogre::Vector3{1,0.34,1},Ogre::Node::TS_PARENT);
-      
-      node_child->lookAt( Ogre::Vector3{-1.9,0.34,1},Ogre::Node::TS_PARENT);
-
-      item_child->getWorldAabbUpdated();
-      
-     
-       
-       // Ogre::v1::Entity *ent = sceneManager->createEntity( "Ninja", "ninja.mesh" );
-
-      Ogre::SceneNode*child_node=mSceneNode->createChildSceneNode(Ogre::SCENE_DYNAMIC);
-
-     
-
-      TutorialGameState::createScene01();
+        TutorialGameState::createScene01();
     }
     //-----------------------------------------------------------------------------------
     void GraphicsGameState::generateDebugText( float timeSinceLast, Ogre::String &outText )

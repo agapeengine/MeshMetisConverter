@@ -26,6 +26,9 @@
 #include "OgreSceneFormatExporter.h"
 #include "OgreSceneFormatImporter.h"
 
+#include "OgreMesh.h"
+#include "OgreMesh2.h"
+
 #include "../LocalCubemaps/LocalCubemapScene.h"
 #include "Compositor/OgreCompositorManager2.h"
 #include "Cubemaps/OgreParallaxCorrectedCubemap.h"
@@ -237,11 +240,6 @@ namespace Demo
             // Create the floor decal
             Ogre::Decal *decal = sceneManager->createDecal();
             Ogre::SceneNode *sceneNode = sceneManager->getRootSceneNode()->createChildSceneNode();
-            Ogre::SceneNode*scenenode_2=sceneNode->createChildSceneNode(Ogre::SCENE_DYNAMIC);
-            
-            Ogre::Quaternion rot( 1, 0.045, 0.44, 0 );
-            scenenode_2->setOrientation(rot);
-
             sceneNode->attachObject( decal );
             sceneNode->setPosition( Ogre::Vector3( 0, 0.0, 5.0f ) );
             sceneNode->setOrientation(
@@ -579,7 +577,7 @@ namespace Demo
     }
     //-----------------------------------------------------------------------------------
     void SceneFormatGameState::createScene01()
-    {
+    {   
         Ogre::v1::MeshPtr planeMeshV1 = Ogre::v1::MeshManager::getSingleton().createPlane(
             "Plane v1", Ogre::ResourceGroupManager::DEFAULT_RESOURCE_GROUP_NAME,
             Ogre::Plane( Ogre::Vector3::UNIT_Y, 1.0f ), 50.0f, 50.0f, 1, 1, true, 1, 4.0f, 4.0f,
@@ -589,6 +587,11 @@ namespace Demo
         Ogre::MeshPtr planeMesh = Ogre::MeshManager::getSingleton().createByImportingV1(
             "Plane", Ogre::ResourceGroupManager::DEFAULT_RESOURCE_GROUP_NAME, planeMeshV1.get(), true,
             true, true );
+
+          Ogre::v1::MeshPtr meshcharacter= Ogre::v1::MeshManager::getSingleton().load(
+            "ninja.mesh",Ogre:: ResourceGroupManager::AUTODETECT_RESOURCE_GROUP_NAME,
+            Ogre::v1::HardwareBuffer::HBU_STATIC,
+            Ogre::v1::HardwareBuffer::HBU_STATIC);
 
         generateScene();
         mCameraController = new CameraController( mGraphicsSystem, false );

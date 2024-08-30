@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\Windows\System32\Ogre\ogre-next\build\bin\Debug\OgreMain_d.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Windows\System32\Ogre\ogre-next\build\bin\Debug\OgreAtmosphere_d.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Windows\System32\Ogre\ogre-next\build\bin\Debug\OgreHlmsPbs_d.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Windows\System32\Ogre\ogre-next\build\bin\Debug\OgreHlmsUnlit_d.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Windows\System32\Ogre\ogre-next\build\bin\Debug\OgreOverlay_d.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Windows\System32\Ogre\ogre-next\build\bin\Debug\Test_BillboardTest.exe</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

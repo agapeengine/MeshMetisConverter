@@ -454,7 +454,7 @@ namespace Ogre
     //-------------------------------------------------------------------------
     size_t VulkanRenderSystem::getNumPriorityConfigOptions() const { return 1u; }
     //-------------------------------------------------------------------------
-    bool VulkanRenderSystem::supportsMultithreadedShaderCompliation() const
+    bool VulkanRenderSystem::supportsMultithreadedShaderCompilation() const
     {
 #ifndef OGRE_SHADER_THREADING_BACKWARDS_COMPATIBLE_API
         return true;
@@ -3393,7 +3393,10 @@ namespace Ogre
         makeVkStruct( mssCi, VK_STRUCTURE_TYPE_PIPELINE_MULTISAMPLE_STATE_CREATE_INFO );
         mssCi.rasterizationSamples =
             static_cast<VkSampleCountFlagBits>( newPso->pass.sampleDescription.getColourSamples() );
-        mssCi.alphaToCoverageEnable = newPso->blendblock->mAlphaToCoverageEnabled;
+        mssCi.alphaToCoverageEnable =
+            newPso->blendblock->mAlphaToCoverage == HlmsBlendblock::A2cEnabled ||
+            ( newPso->blendblock->mAlphaToCoverage == HlmsBlendblock::A2cEnabledMsaaOnly &&
+              newPso->pass.sampleDescription.isMultisample() );
 
         VkPipelineDepthStencilStateCreateInfo depthStencilStateCi;
         makeVkStruct( depthStencilStateCi, VK_STRUCTURE_TYPE_PIPELINE_DEPTH_STENCIL_STATE_CREATE_INFO );
