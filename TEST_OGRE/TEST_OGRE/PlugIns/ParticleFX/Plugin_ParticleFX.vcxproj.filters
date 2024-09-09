@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Ogre3D\PlugIns\ParticleFX\src\OgreAreaEmitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Ogre3D\PlugIns\ParticleFX\src\OgreBoxEmitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Ogre3D\PlugIns\ParticleFX\src\OgreColourFaderAffector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Ogre3D\PlugIns\ParticleFX\src\OgreColourFaderAffector2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Ogre3D\PlugIns\ParticleFX\src\OgreColourImageAffector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Ogre3D\PlugIns\ParticleFX\src\OgreColourInterpolatorAffector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Ogre3D\PlugIns\ParticleFX\src\OgreCylinderEmitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Ogre3D\PlugIns\ParticleFX\src\OgreDeflectorPlaneAffector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Ogre3D\PlugIns\ParticleFX\src\OgreDirectionRandomiserAffector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Ogre3D\PlugIns\ParticleFX\src\OgreEllipsoidEmitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Ogre3D\PlugIns\ParticleFX\src\OgreHollowEllipsoidEmitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Ogre3D\PlugIns\ParticleFX\src\OgreLinearForceAffector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Ogre3D\PlugIns\ParticleFX\src\OgreParticleFX.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Ogre3D\PlugIns\ParticleFX\src\OgreParticleFXPlugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Ogre3D\PlugIns\ParticleFX\src\OgrePointEmitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Ogre3D\PlugIns\ParticleFX\src\OgreRingEmitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Ogre3D\PlugIns\ParticleFX\src\OgreRotationAffector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Ogre3D\PlugIns\ParticleFX\src\OgreScaleAffector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Ogre3D\PlugIns\ParticleFX\src\OgreTextureAnimatorAffector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Ogre3D\PlugIns\ParticleFX\include\OgreAreaEmitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Ogre3D\PlugIns\ParticleFX\include\OgreBoxEmitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Ogre3D\PlugIns\ParticleFX\include\OgreColourFaderAffector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Ogre3D\PlugIns\ParticleFX\include\OgreColourFaderAffector2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Ogre3D\PlugIns\ParticleFX\include\OgreColourImageAffector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Ogre3D\PlugIns\ParticleFX\include\OgreColourInterpolatorAffector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Ogre3D\PlugIns\ParticleFX\include\OgreCylinderEmitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Ogre3D\PlugIns\ParticleFX\include\OgreDeflectorPlaneAffector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Ogre3D\PlugIns\ParticleFX\include\OgreDirectionRandomiserAffector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Ogre3D\PlugIns\ParticleFX\include\OgreEllipsoidEmitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Ogre3D\PlugIns\ParticleFX\include\OgreHollowEllipsoidEmitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Ogre3D\PlugIns\ParticleFX\include\OgreLinearForceAffector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Ogre3D\PlugIns\ParticleFX\include\OgreParticleFXPlugin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Ogre3D\PlugIns\ParticleFX\include\OgrePointEmitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Ogre3D\PlugIns\ParticleFX\include\OgreRingEmitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Ogre3D\PlugIns\ParticleFX\include\OgreRotationAffector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Ogre3D\PlugIns\ParticleFX\include\OgreScaleAffector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Ogre3D\PlugIns\ParticleFX\include\OgreTextureAnimatorAffector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Ogre3D\build\include\OgreParticleFXPrerequisites.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{A87F37A1-6635-3826-B131-5617B64B37C4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{1ACB4073-6B72-37A7-8684-A70FBC5536D2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

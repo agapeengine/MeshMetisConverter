@@ -1,0 +1,6 @@
+﻿  OgreOctreeZone.cpp
+  OgreOctreeZoneDll.cpp
+  OgreOctreeZoneOctree.cpp
+  OgreOctreeZonePlugin.cpp
+     Creating library D:/Ogre3D/build/lib/RelWithDebInfo/Plugin_OctreeZone.lib and object D:/Ogre3D/build/lib/RelWithDebInfo/Plugin_OctreeZone.exp
+  Plugin_OctreeZone.vcxproj -> D:\Ogre3D\build\bin\RelWithDebInfo\Plugin_OctreeZone.dll

@@ -1,0 +1,4 @@
+﻿  OgreSTBICodec.cpp
+D:\Ogre3D\PlugIns\STBICodec\src\OgreSTBICodec.cpp(136,130): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+     Creating library D:/Ogre3D/build/lib/Release/Codec_STBI.lib and object D:/Ogre3D/build/lib/Release/Codec_STBI.exp
+  Codec_STBI.vcxproj -> D:\Ogre3D\build\bin\Release\Codec_STBI.dll

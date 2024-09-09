@@ -1,0 +1,6 @@
+﻿  DotSceneLoader.cpp
+D:\Ogre3D\OgreMain\include\OgreWorkQueue.h(206,91): warning C4244: 'argument': conversion from 'Ogre::uint64' to 'unsigned long', possible loss of data
+D:\Ogre3D\PlugIns\DotScene\src\DotSceneLoader.cpp(387,68): warning C4305: 'argument': truncation from 'double' to 'Ogre::Real'
+D:\Ogre3D\PlugIns\DotScene\src\DotSceneLoader.cpp(743,62): warning C4305: 'argument': truncation from 'double' to 'Ogre::Real'
+     Creating library D:/Ogre3D/build/lib/Release/Plugin_DotScene.lib and object D:/Ogre3D/build/lib/Release/Plugin_DotScene.exp
+  Plugin_DotScene.vcxproj -> D:\Ogre3D\build\bin\Release\Plugin_DotScene.dll

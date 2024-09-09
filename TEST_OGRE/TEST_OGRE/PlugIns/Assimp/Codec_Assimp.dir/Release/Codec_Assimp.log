@@ -1,0 +1,5 @@
+﻿  AssimpLoader.cpp
+D:\Ogre3D\OgreMain\include\OgreWorkQueue.h(206,91): warning C4244: 'argument': conversion from 'Ogre::uint64' to 'unsigned long', possible loss of data
+D:\Ogre3D\PlugIns\Assimp\src\AssimpLoader.cpp(1064,75): warning C4267: 'initializing': conversion from 'size_t' to 'Ogre::uint16', possible loss of data
+     Creating library D:/Ogre3D/build/lib/Release/Codec_Assimp.lib and object D:/Ogre3D/build/lib/Release/Codec_Assimp.exp
+  Codec_Assimp.vcxproj -> D:\Ogre3D\build\bin\Release\Codec_Assimp.dll

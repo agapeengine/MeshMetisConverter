@@ -1,0 +1,23 @@
+﻿  OgreAreaEmitter.cpp
+  OgreBoxEmitter.cpp
+  OgreColourFaderAffector.cpp
+  OgreColourFaderAffector2.cpp
+  OgreColourImageAffector.cpp
+  OgreColourInterpolatorAffector.cpp
+  OgreCylinderEmitter.cpp
+  OgreDeflectorPlaneAffector.cpp
+  OgreDirectionRandomiserAffector.cpp
+  OgreEllipsoidEmitter.cpp
+  OgreHollowEllipsoidEmitter.cpp
+  OgreLinearForceAffector.cpp
+  OgreParticleFX.cpp
+  OgreParticleFXPlugin.cpp
+  OgrePointEmitter.cpp
+  OgreRingEmitter.cpp
+  OgreRotationAffector.cpp
+  OgreScaleAffector.cpp
+  OgreTextureAnimatorAffector.cpp
+D:\Ogre3D\PlugIns\ParticleFX\src\OgreTextureAnimatorAffector.cpp(75,53): warning C4244: '=': conversion from 'float' to 'Ogre::uint8', possible loss of data
+D:\Ogre3D\PlugIns\ParticleFX\src\OgreTextureAnimatorAffector.cpp(98,63): warning C4244: '=': conversion from 'float' to 'Ogre::uint8', possible loss of data
+     Creating library D:/Ogre3D/build/lib/Debug/Plugin_ParticleFX_d.lib and object D:/Ogre3D/build/lib/Debug/Plugin_ParticleFX_d.exp
+  Plugin_ParticleFX.vcxproj -> D:\Ogre3D\build\bin\Debug\Plugin_ParticleFX_d.dll

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Ogre3D\build\CMakeFiles\407a8370086fd5a6dca09143add73b07\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{DEEF57FF-3596-375B-A0DC-F5EBF18E4365}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

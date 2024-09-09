@@ -1,0 +1,12 @@
+﻿  OgreBspLevel.cpp
+  OgreBspNode.cpp
+  OgreBspSceneManager.cpp
+  OgreBspSceneManagerDll.cpp
+  OgreBspSceneManagerPlugin.cpp
+  OgreBspSceneNode.cpp
+  OgreQuake3Level.cpp
+  OgreQuake3Shader.cpp
+  OgreQuake3ShaderManager.cpp
+D:\Ogre3D\PlugIns\BSPSceneManager\src\OgreBspLevel.cpp(264,64): warning C4267: '=': conversion from 'size_t' to 'Ogre::uint32', possible loss of data
+     Creating library D:/Ogre3D/build/lib/RelWithDebInfo/Plugin_BSPSceneManager.lib and object D:/Ogre3D/build/lib/RelWithDebInfo/Plugin_BSPSceneManager.exp
+  Plugin_BSPSceneManager.vcxproj -> D:\Ogre3D\build\bin\RelWithDebInfo\Plugin_BSPSceneManager.dll

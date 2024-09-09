@@ -1,0 +1,21 @@
+﻿  OgreAntiPortal.cpp
+  OgreCapsule.cpp
+  OgreDefaultZone.cpp
+  OgrePCPlane.cpp
+  OgrePCZCamera.cpp
+  OgrePCZFrustum.cpp
+  OgrePCZLight.cpp
+  OgrePCZPlugin.cpp
+  OgrePCZSceneManager.cpp
+  OgrePCZSceneManagerDll.cpp
+  OgrePCZSceneNode.cpp
+  OgrePCZSceneQuery.cpp
+  OgrePCZone.cpp
+  OgrePCZoneFactory.cpp
+  OgrePortal.cpp
+  OgrePortalBase.cpp
+  OgreSegment.cpp
+D:\Ogre3D\PlugIns\PCZSceneManager\src\OgreSegment.cpp(42,39): warning C4305: 'initializing': truncation from 'double' to 'Ogre::Real'
+D:\Ogre3D\PlugIns\PCZSceneManager\src\OgrePCZCamera.cpp(44,56): warning C4305: 'argument': truncation from 'double' to 'Ogre::Real'
+     Creating library D:/Ogre3D/build/lib/Release/Plugin_PCZSceneManager.lib and object D:/Ogre3D/build/lib/Release/Plugin_PCZSceneManager.exp
+  Plugin_PCZSceneManager.vcxproj -> D:\Ogre3D\build\bin\Release\Plugin_PCZSceneManager.dll

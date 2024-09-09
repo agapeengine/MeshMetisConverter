@@ -1,0 +1,9 @@
+﻿  OgreOctree.cpp
+  OgreOctreeCamera.cpp
+  OgreOctreeNode.cpp
+  OgreOctreePlugin.cpp
+  OgreOctreeSceneManager.cpp
+  OgreOctreeSceneManagerDll.cpp
+  OgreOctreeSceneQuery.cpp
+     Creating library D:/Ogre3D/build/lib/Release/Plugin_OctreeSceneManager.lib and object D:/Ogre3D/build/lib/Release/Plugin_OctreeSceneManager.exp
+  Plugin_OctreeSceneManager.vcxproj -> D:\Ogre3D\build\bin\Release\Plugin_OctreeSceneManager.dll
