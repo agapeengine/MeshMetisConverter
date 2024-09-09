@@ -13,10 +13,13 @@
 #include<optional>
 #include<tuple>
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 static std::string filepath= "..\uploads_files_3162983_f104starfighter.obj";
 =======
+=======
+>>>>>>> 3cb51ec (Added Ogre-next source)
 #include<utility>
 #include "reactphysics3d/engine/Entity.h"
 #include "reactphysics3d/engine/PhysicsWorld.h"
@@ -45,6 +48,9 @@ using uint32 = std::uint32_t;
 using int64 = std::int64_t;
 using uint64 = std::uint64_t;
 
+<<<<<<< HEAD
+>>>>>>> 3cb51ec (Added Ogre-next source)
+=======
 >>>>>>> 3cb51ec (Added Ogre-next source)
 
 
@@ -58,7 +64,12 @@ void writeMeshToMetisFile(const aiScene*scene, const std::string& filename)
 	xadjVec.push_back(0); // Start at index 0
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	size_t numvertexinmodel;
+=======
+	
+
+>>>>>>> 3cb51ec (Added Ogre-next source)
 =======
 	
 
@@ -148,11 +159,14 @@ int main(int argc,char**argv)
 
    
 <<<<<<< HEAD
+<<<<<<< HEAD
    writeMeshToMetisFile(scene_local,metisFilename);
 
    
    return 0;
 =======
+=======
+>>>>>>> 3cb51ec (Added Ogre-next source)
    //writeMeshToMetisFile(scene_local,metisFilename);
 
    reactphysics3d::PhysicsCommon physicsCommon;
@@ -310,6 +324,9 @@ int main(int argc,char**argv)
 
    return 0;
 
+<<<<<<< HEAD
+>>>>>>> 3cb51ec (Added Ogre-next source)
+=======
 >>>>>>> 3cb51ec (Added Ogre-next source)
  }
 
