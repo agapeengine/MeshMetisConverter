@@ -4,10 +4,13 @@
 #include <iostream>
 #include"Ogre.h"
 #include"include/OgreApplicationContext.h"
-#include "OgreBspPrerequisites.h"
-#include "include/OgreBspSceneManager.h"
-#include"include/OgreBspNode.h"
-#include "OgreSceneManagerEnumerator.h"
+
+
+#include"include/OgreOctreeSceneManager.h"
+#include"include/OgreOctree.h"
+#include"include/OgreOctreeNode.h"
+#include"include/OgreOctreeSceneQuery.h"
+
 
 class KeyHandler : public OgreBites::InputListener
 {
@@ -33,10 +36,20 @@ int main(int argc, char* argv[])
 		// get a pointer to the already created root
 	Ogre::Root* root = ctx.getRoot();
 	
-	Ogre::BspSceneManager* scnMgr=dynamic_cast<Ogre::BspSceneManager*>(root->createSceneManager("BspSceneManager"));
-	
-	scnMgr->setWorldGeometry("BspDemo.bsp");
+	Ogre::OctreeSceneManager* scnMgr=dynamic_cast<Ogre::OctreeSceneManager*>(root->createSceneManager("OctreeSceneManager"));
+    
 
+	Ogre::AxisAlignedBox box(Ogre::Vector3(-2000, -2000, -2000), Ogre::Vector3(2000, 2000,2000));
+
+
+	scnMgr->init(box, 3000);
+
+	Ogre::OctreeNode* root_oct_tree=dynamic_cast<Ogre::OctreeNode*>(scnMgr->getRootSceneNode());
+	
+	root_oct_tree=dynamic_cast<Ogre::OctreeNode*>(root_oct_tree);
+	
+	
+	
 	// register our scene with the RTSS
 	Ogre::RTShader::ShaderGenerator* shadergen = Ogre::RTShader::ShaderGenerator::getSingletonPtr();
 	shadergen->addSceneManager(scnMgr);
@@ -49,13 +62,15 @@ int main(int argc, char* argv[])
 	scnMgr->setAmbientLight(Ogre::ColourValue(0, 0, 0));
 	/*light->setDiffuseColour(Ogre::ColourValue(0.4, 0, 0,0));
 	light->setSpecularColour(Ogre::ColourValue(0.4, 0, 0.0));*/
+
+	scnMgr=dynamic_cast<Ogre::OctreeSceneManager*>(scnMgr);
 	
-	Ogre::SceneNode* lightNode = scnMgr->getRootSceneNode()->createChildSceneNode();
+	Ogre::SceneNode* lightNode = root_oct_tree->createChildSceneNode("FirstNode");
+	   
 	lightNode->setDirection(-1, -1, 0);
 	lightNode->setPosition(200,200,0);
 	lightNode->attachObject(light);
-
-
+        	
 	
 	// also need to tell where we are
 	Ogre::SceneNode* camNode = scnMgr->getRootSceneNode()->createChildSceneNode();
@@ -95,31 +110,93 @@ int main(int argc, char* argv[])
 
 	groundEntity->setCastShadows(false);
 	
-	Ogre::SceneNode*firts=scnMgr->getRootSceneNode()->createChildSceneNode();
+	Ogre::SceneNode*first_ent_node=root_oct_tree->createChildSceneNode("Second Node");
 
-	firts->attachObject(groundEntity);
-	auto ent_node_1=firts->createChildSceneNode();
-	ent_node_1->attachObject(ent);
-	ent_node_1->setPosition(Ogre::Vector3(0,4,1));
+	root_oct_tree->attachObject(groundEntity);
+
+	auto root_oct_tree_downcasted=static_cast<Ogre::SceneNode*>(root_oct_tree);
+	
+	root_oct_tree_downcasted->_updateBounds();
+		
+			
+	scnMgr->_updateOctreeNode(static_cast<Ogre::OctreeNode*>(root_oct_tree_downcasted));
+
+	
+	auto ent_node_1=(first_ent_node)->createChildSceneNode("second");
+
+	first_ent_node->attachObject(ent);
+
+	first_ent_node->setPosition(Ogre::Vector3(0,4,1));
+	
+	
+
+	first_ent_node->_updateBounds();
 
 	Ogre::SceneNode*node_ent_2=ent_node_1->createChildSceneNode();
 
 	node_ent_2->attachObject(ent_2);
 	node_ent_2->setPosition(15,0,20);
 
+	node_ent_2->_updateBounds();
+
+
 	auto ent_node_3=node_ent_2->createChildSceneNode();
-
-	dynamic_cast<Ogre::BspNode*>(ent_node_3);
-
+			
 	ent_node_3->attachObject(ent_3);
 	ent_node_3->setPosition(15,0,20);
+
+    node_ent_2->_updateBounds();
+
+	
+
 	Ogre::MeshManager* ptr_mesh=Ogre::MeshManager::getSingletonPtr();
 
-	auto mesh_scg=ptr_mesh->load("ninja.mesh",Ogre::ResourceGroupManager::AUTODETECT_RESOURCE_GROUP_NAME);
-		
+	auto mesh_loaded=ptr_mesh->load("ninja.mesh",Ogre::ResourceGroupManager::AUTODETECT_RESOURCE_GROUP_NAME);
+	
+	auto buff_mg=Ogre::HardwareBufferManager::getSingletonPtr();
+	
+
+
+	auto buffer_vertex=mesh_loaded->getHardwareBufferManager();
+
+	auto skel_mesh=mesh_loaded->getSkeleton();
+			
+	auto sub_mesh=mesh_loaded->getSubMeshes();
+
+	
+
+	auto &vertex_subdata=sub_mesh.at(0)->vertexData;
+
+	vertex_subdata->vertexBufferBinding->getBuffer(0);
+
+	auto buffer_mesh_temp=vertex_subdata->vertexBufferBinding->getBuffer(0);
+	auto mesh_manager_vertex_num=buffer_mesh_temp->getNumVertices();
+	
+	for (uint16_t count = 0; count < mesh_manager_vertex_num; count++)
+	{
+		vertex_subdata->
+
+		vertex_subdata->vertexBufferBinding->getBuffer(0)->readData(vertex_subdata->,)
+
+	}
+	
 	Ogre::StaticGeometry *geom=scnMgr->createStaticGeometry("ninja.mesh");
 	
 	scnMgr->injectMovableObject(ent_3);
+     
+	 Ogre::Ray ray(Ogre::Vector3(0,0,0),Ogre::Vector3(100,-200,145));
+
+	auto scene_visible_objects=scnMgr->getVisibleObjectsBoundsInfo(cam);
+
+	Ogre::VisibleObjectsBoundsInfo info;
+
+	scnMgr->_findVisibleObjects(cam,&info,true);
+
+	auto ray_query= scnMgr->createRayQuery(ray,1);
+
+	ray_query->execute();
+	 
+
    
 	
 	
